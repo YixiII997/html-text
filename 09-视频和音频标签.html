@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>视频标签</title>
+</head>
+
+<body>
+  <h1>视频标签</h1>
+  <p>视频标签 video 是一个单标签 或者 空元素</p>
+  <p>src 视频路径</p>
+  <p>width height 视频的宽度和高度</p>
+  <p>controls 视频是否显示控制 默认不显示</p>
+  <p>autoplay 视频是否自动播放 默认不自动播放 </p>
+  <p>loop 视频是否循环播放视频 默认不循环播放 </p>
+  <p>muted 视频是否静音播放 默认不静音 </p>
+  <p>poster 视频封面 默认不显示封面 </p>
+  <p>在h5中 如果 属性的键和值是相同的 则可以省略值 例如 controls="controls"代表着打开网页控制 可以写成 controls 如果想要关闭 写成 controls=false</p>
+  <h2>视频兼容性</h2>
+  <p>mp4 视频格式 支持所有浏览器 插入视频的时候优先考虑</p>
+  <p>webm和ogg 视频格式 IE和Safari不支持</p>
+  <hr>
+  <p>这个时候就需要兼容性写法 在video标签中嵌套source标签</p>
+  <p>浏览器会寻找第一个兼容的视频格式 并且播放 不执行下面的代码</p>
+  <p>source标签的属性 src 视频路径 type 视频格式</p>
+  <p>type 视频格式 不要省略 可以帮助浏览器快速省略不支持的类型 不然会占用大量时间</p>
+  <p>type的值 可以是 video/mp4 video/webm video/ogg</p>
+  <hr>
+  <h2>练习区</h2>
+  <video src="https://media.w3.org/2010/05/sintel/trailer.mp4" width="600" controls></video>
+  <p>autoplay 自动播放 和 muted静音(浏览器规定 想要自动播放 必须要静音)</p>
+  <video src="https://media.w3.org/2010/05/sintel/trailer.mp4" width="600" controls autoplay muted></video>
+  <p>循环播放</p>
+  <video src="https://media.w3.org/2010/05/sintel/trailer.mp4" width="600" controls loop></video>
+  <p>视频封面</p>
+  <video src="https://media.w3.org/2010/05/sintel/trailer.mp4" width="400" controls poster=""></video>
+  <p>视频兼容性写法 看代码了这里</p>
+  <video controls>
+    <source src="https://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+    <source src="https://media.w3.org/2010/05/sintel/trailer.webm" type="video/webm">
+    <source src="https://media.w3.org/2010/05/sintel/trailer.ogg" type="video/ogg">
+    <p>您的浏览器不支持 html5 的 video 标签 请升级浏览器</p>
+  </video>
+
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表单（input的文本框和密码框）</title>
+</head>
+
+<body>
+  <h1>表单（input的文本框和密码框）</h1>
+  <p>场景 用户注册 搜索框 问卷 文件上传 支付</p>
+  <h2>表单的组成</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>组成</th>
+        <th>标签名</th>
+        <th>属性</th>
+        <th>作用</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- 表单容器 -->
+      <tr>
+        <td>表单容器</td>
+        <td>form</td>
+        <td>action</td>
+        <td>用于包裹所有表单控件 是一个区域 用于收集区域里的所有数据</td>
+      </tr>
+      <!-- 表单控件 -->
+      <tr>
+        <td>表单控件</td>
+        <td>input输入框 textarea多行文本输入框 select下拉选择框 button按钮等</td>
+        <td></td>
+        <td>和用户交互</td>
+      </tr>
+      <!-- 辅助标签 -->
+      <tr>
+        <td>辅助标签</td>
+        <td>label关联标签</td>
+        <td></td>
+        <td>用于提高用户体验 </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- 表单容器 -->
+  <h2>表单容器 form</h2>
+  <p>双标签 用于定义表单容器 包裹所有控件</p>
+  <p>属性 action="" 定义了 在提交表单的时候 把收集的数据 给某个地方 的 url地址</p>
+  <h2>input 表单</h2>
+  <p>创建 输入框 密码框 单选框 复选框等等</p>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>input的属性</th>
+        <th>属性值</th>
+        <th>作用</th>
+        <th>其他属性</th>
+        <th>概念</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- type -->
+      <!-- text  placerholder-->
+      <tr>
+        <td rowspan="6">type</td>
+        <td rowspan="5">text</td>
+        <td rowspan="5">单行文本框</td>
+        <td>placeholder提示信息 有内容不会显示</td>
+        <td rowspan="5">只能在单行输入文本</td>
+      </tr>
+      <!-- text  name-->
+      <tr>
+        <td>name 元素的名称</td>
+      </tr>
+      <!-- text  maxlength-->
+      <tr>
+        <td>maxlength 允许的最大字符数量</td>
+      </tr>
+      <!-- text  accesskey-->
+      <tr>
+
+        <td>accsesskey 使元素获得焦点的快捷键 设置后用 alt+设置的快捷键 就可以定位焦点 (windows 用alt＋键||mac 用ctrl+option+键)</td>
+      </tr>
+      <!-- text  autocomplete-->
+      <tr>
+        <td>autocomplete 是否根据用户历史信息自动填充 值为 on（是）/off （否）
+          在正常情况下 敏感信息设为off 默认是打开的on
+        </td>
+      </tr>
+      <!-- password -->
+      <tr>
+        <td>password</td>
+        <td>密码框</td>
+        <td>和text相同</td>
+        <td>密文显示</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <hr>
+
+  <h1>练习区</h1>
+  <form action="">
+    <ul>
+      <!-- 单行文本框 -->
+      <li>
+        单行文本框 type="text"
+        <input type="text" placeholder="这是提示信息palceholder的内容" name="username" accesskey="s" autocomplete="off">
+      </li>
+      <!-- 密码框 -->
+      <li>
+        密码框 type="password"
+        <input type="password" placeholder="这是提示信息palceholder的内容" name="password" maxlength="6">
+      </li>
+    </ul>
+  </form>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>超链接</title>
+  <style>
+    /* 让页面实现滑动效果的css代码 */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>超链接标签</h1>
+  <p>可以给文字 图片 盒子 等添加超链接</p>
+  <p>a 超链接标签</p>
+  <p>href 属性可以指定超链接地址</p>
+  <p>title 属性 鼠标悬停的时候显示文字</p>
+  <p>target 属性 默认_self 打开当前窗口或标签页 _blank 打开新窗口或标签页</p>
+  <h2>链接的分类（href的值）</h2>
+  <p>空链接 用#表示 不去任何页面 用于未开发完成的页面 补全代码</p>
+  <p>下载链接 直接写文件名就行</p>
+  <p>邮件链接 用 mailto:邮箱地址</p>
+  <h2 id="a">锚点链接</h2>
+  <p>可以允许用户在同一个页面内跳转到指定位置 适合长页面导航</p>
+  <p>使用 id 属性 给一个元素分配一个id</p>
+  <p>在 href 属性中 href="#id值" 就可以让超链接对应id值的元素位置</p>
+  <p>想做页面 滑动效果 而不是直接跳</p>
+  <p>可以在head标签中</p>
+  <h2>补充</h2>
+  <p> br 是 强制换行标签 </p>
+
+  <hr>
+
+  <h1>练习区</h1>
+  <h2>内部链接 去往网站内部的页面</h2>
+  <a href="09-视频和音频标签.html">视频标签</a>
+  <h2>外部链接 去往网站外部的页面</h2>
+  <a href="https://www.baidu.com" title="百度" target="_blank">这是一个超链接 去往百度 有title和target</a>
+  <p>空链接</p>
+  <a href="#">空连接</a>
+  <p>下载链接（没有下载的东西 如果有需要直接href等于文件相对地址就行）</p>
+  <a href="#">下载链接</a>
+  <p>邮件链接 用 mailto:邮箱地址</p>
+  <a href="mailto:28306@qq.com">发送邮件</a>
+  <h2>锚点链接</h2>
+  <a href="#a">跳转到锚点链接</a>
+
+</body>
+
+</html>

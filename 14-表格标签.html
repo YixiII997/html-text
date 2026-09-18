@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表格标签</title>
+</head>
+
+<body>
+  <h1>表格标签</h1>
+  <p>用于数据的展示 不用于页面排版 排列整齐 清晰直观</p>
+  <h2>语法</h2>
+  <p>没有列的概念 是用单元格展示的</p>
+  <h3>表格的基本标签</h3>
+  <p>table 表格容器标签 </p>
+  <p>tr 行标签 </p>
+  <p>td 单元格标签 </p>
+  <p>th 表头单元格 </p>
+  <h3>表格的结构标签</h3>
+  <p>thead 表格的头部</p>
+  <p>tbody 表格的主体</p>
+  <p>tfoot 表格的底部 开发中使用较少</p>
+  <h2>table 的属性</h2>
+  <p> border 边框属性 值是数值 表示有几个像素宽</p>
+  <p> 相关样式 由 css去写 不在html里面写属性</p>
+  <h2>th 表头单元格</h2>
+  <p> 文字： 水平 垂直 居中 加粗显示 一般用于第一行或者第一列</p>
+  <h2>合并单元格 实际开发中很少用 难以维护</h2>
+  <p>先确定是 跨行rowspan 还是 跨列colspan 合并单元格 </p>
+  <p>找到目标单元格 确定合并数量 写代码要确定左上单元格位置 写道左边 （左上原则）</p>
+  <p>在目标单元格 协商 colspan="2" 意思是跨列 合并 2个单元格</p>
+  <p>最后 删除多余 单元格</p>
+
+  <hr>
+
+  <h1>练习区</h1>
+  <p>简单的表格</p>
+  <table border="1">
+    <tr>
+      <th>表头单元格th</td>
+      <th>表头单元格th</td>
+      <th>表头单元格th</td>
+    </tr>
+    <tr>
+      <td>单元格td</td>
+      <td>单元格td</td>
+      <td>单元格td</td>
+    </tr>
+    <tr>
+      <td>单元格td</td>
+      <td>单元格td</td>
+      <td>单元格td</td>
+    </tr>
+
+
+
+  </table>
+
+  <br>
+  <p>表格的结构标签</p>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>表头单元格th</td>
+        <th>表头单元格th</td>
+        <th>表头单元格th</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>单元格td</td>
+        <td>单元格td</td>
+        <td>单元格td</td>
+      </tr>
+      <tr>
+        <td>单元格td</td>
+        <td>单元格td</td>
+        <td>单元格td</td>
+      </tr>
+    </tbody>
+    <tfoot></tfoot>
+  </table>
+
+  <br>
+  <p>合并单元格测试</p>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>表头单元格th</td>
+        <th>表头单元格th</td>
+        <th>表头单元格th</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">跨行rowspan合并</td>
+        <td>单元格td</td>
+        <td>单元格td</td>
+      </tr>
+      <tr>
+        <td colspan="2">跨列合并 colspan</td>
+      </tr>
+    </tbody>
+    <tfoot></tfoot>
+  </table>
+
+
+</body>
+
+</html>

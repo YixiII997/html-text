@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表单（input单选框，复选框，文件域）</title>
+</head>
+
+
+<body>
+  <h1>表单（input单选框，复选框，文件域）</h1>
+  <h2>单选框和复选框</h2>
+  <p>radio单选框 checkbox复选框</p>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>input的属性</th>
+        <th>属性值</th>
+        <th>作用</th>
+        <th>其他属性</th>
+        <th>概念</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- 单选框 radio-->
+      <!-- 属性 name -->
+      <tr>
+        <td rowspan="6">type</td>
+        <td rowspan="3">radio</td>
+        <td rowspan="3">单选框</td>
+        <td>name 表单名称 实现分组</td>
+        <td> 在相同的name的单选框中 只能选中 一个单选框 </td>
+      </tr>
+      <!-- 属性 value -->
+      <tr>
+        <td>value 表单值</td>
+        <td></td>
+      </tr>
+      <!-- 属性 checked -->
+      <tr>
+        <td>checked 是否默认选中</td>
+        <td>
+          checked="checked" 页面打开时候 该单选框自动选择
+          <br>
+          但是如果一个name中 有多个checked 默认最后一个生效
+        </td>
+      </tr>
+      <!-- 复选框 checkbox -->
+      <tr>
+        <td>checkbox</td>
+        <td>复选框</td>
+        <td>和radio 单选框 相同</td>
+        <td></td>
+      </tr>
+      <!-- 文件域 file-->
+      <!-- file multiple -->
+      <tr>
+        <td rowspan="2">file</td>
+        <td rowspan="2">
+          文件域
+          <br>
+          上传文件
+        </td>
+        <td>multiple 允许选择多个文件</td>
+        <td>如果不写 默认是选择一个</td>
+      </tr>
+      <!-- file accept -->
+      <tr>
+        <td>accept 规定选择的文件类型</td>
+        <td> 多个类型用逗号分隔</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+
+  <h2>练习区</h2>
+  <form action="">
+    <ul>
+      <!-- 单选框 -->
+      <li>
+        单选框 type="radio" name相同分组↓
+        <br>
+        <input type="radio" name="test" value="firstRadio" checked> 第一个单选框
+        <input type="radio" name="test" value="secondRadio"> 第二个单选框
+      </li>
+      <!-- 复选框 -->
+      <li>
+        复选框 type="checkbox"
+        <br>
+        <input type="checkbox" name="testCheckbox" value="firstCheckbox"> 第一个复选框
+        <input type="checkbox" name="testCheckbox" value="secondRadio"> 第二个复选框
+        <input type="checkbox" name="testCheckbox" value="thredCheckbox"> 第三个复选框
+      </li>
+      <!-- 文件域 file -->
+      <li>
+        文件域 file
+        <br>
+        可以选择多个文件 multiple
+        <br>
+        accept=".mp4,.jpg" accept规定了上传mp4 和 jpg文件类型
+        <br>
+        <input type="file" name="file" multiple accept=".mp4,.jpg">
+
+      </li>
+
+
+
+    </ul>
+
+
+  </form>
+
+
+</body>
+
+
+</html>

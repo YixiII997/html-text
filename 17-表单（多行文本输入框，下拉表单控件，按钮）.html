@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>表单（多行文本输入框，下拉表单控件，按钮）</title>
+</head>
+
+<body>
+  <h1>多行文本输入框，下拉表单控件，按钮</h1>
+  <h2>多行文本输入框</h2>
+  <!-- textarea table -->
+  <table border="1">
+    <thead>
+      <tr>
+        <th>input的属性</th>
+        <th>属性值</th>
+        <th>作用</th>
+        <th>其他属性</th>
+        <th>概念</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- textarea -->
+      <!-- textarea name-->
+      <tr>
+        <td rowspan="4">type</td>
+        <td rowspan="4">textarea</td>
+        <td rowspan="4">多行文本输入框</td>
+        <td>name</td>
+        <td>表单名称</td>
+      </tr>
+
+      <!-- textarea placeholder-->
+      <tr>
+        <td>placeholder</td>
+        <td>提示信息</td>
+      </tr>
+
+      <!-- textarea rows-->
+      <tr>
+        <td>rows</td>
+        <td>文本行数 正整数 默认为2 一般通过css修改</td>
+      </tr>
+
+      <!-- textarea cols-->
+      <tr>
+        <td>cols</td>
+        <td>文本列数 正整数 默认为20 一般通过css修改</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>下拉表单控件</h2>
+  <!-- select table -->
+  <table border="1">
+    <thead>
+      <tr>
+        <th>input的属性</th>
+        <th>属性值</th>
+        <th>属性概念</th>
+        <th>属性组成标签</th>
+        <th>属性</th>
+        <th>作用</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- select -->
+      <!-- select select  -->
+      <!-- select select  name-->
+      <tr>
+        <td rowspan="3">type</td>
+        <td rowspan="3">select</td>
+        <td rowspan="3">下拉表单控件</td>
+        <td>select</td>
+        <td>name</td>
+        <td>表单名称</td>
+      </tr>
+
+      <!-- select option  -->
+      <!-- select option value  -->
+      <tr>
+        <td rowspan="2">option</td>
+        <td>value</td>
+        <td>每个选项对应的值</td>
+      </tr>
+
+      <!-- select option selected  -->
+      <tr>
+        <td>selected</td>
+        <td>可以设置默认选中的项</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+  <h2>按钮控件</h2>
+  <!-- button table -->
+  <table border="1">
+    <thead>
+      <tr>
+        <th>input的属性</th>
+        <th>属性值</th>
+        <th>作用</th>
+        <th>其他属性</th>
+        <th>概念</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- button -->
+      <!-- button disabled-->
+      <tr>
+        <td>type</td>
+        <td>button</td>
+        <td>按钮控件</td>
+        <td>disabied</td>
+        <td>disabled="disabled"按钮被禁用</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <p>因为下拉列表很难更改 实际开发中是用其他类似的标签模拟功能</p>
+
+
+  <hr>
+
+  <h1>练习区</h1>
+  <form action="">
+    <ul>
+      <!-- textarea -->
+      <li>
+        <p>
+          多行文本输入框 || 文本域
+          <br>
+          rows为10 cols为30
+        </p>
+        <textarea name="theTextarea" placeholder="placeholder的内容" rows="10" cols="30"></textarea>
+      </li>
+
+      <!-- select -->
+      <li>
+        <p>下拉表单控件 设置了默认选中 selected 在option2上</p>
+        <select name="theSelect">
+          <option value="option1">option1</option>
+          <option value="option2" selected>option2</option>
+          <option value="option3">option3</option>
+          <option value="option4">option4</option>
+        </select>
+      </li>
+
+      <!-- button -->
+      <li>
+        <p>按钮控件</p>
+        <button>button按钮</button>
+        <br>
+        <button disabled>disabled禁用 button按钮</button>
+      </li>
+    </ul>
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关系选择器（后代和子代选择器）</title>
+  <style>
+    /* 后代选择器 */
+    .box p {
+      font-size: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .box02>span {
+      font-size: 25px;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>后代和子代选择器</h1>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>选择器</th>
+        <th>概念</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>后代选择器</td>
+        <td>可以选择某个元素的后代 不限层级和子元素，孙元素等</td>
+        <td>例如 .box p{}这个选择的是 class="box"里面的p元素</td>
+      </tr>
+
+    </tbody>
+  </table>
+  <hr>
+  <h1>练习区</h1>
+  <div class="box">
+    <p>div里面的p</p>
+    <p>设置了 .box p{font-size:20px;}</p>
+    <p>
+      所以 div class="box" 的后代p 字号会变大
+      <br>
+      不是他的后代不会被选择
+    </p>
+  </div>
+  <p>div外面的p</p>
+  <br>
+  <br>
+  <br>
+  <div class="box02">
+    <span>子代span
+      <p>这里用了 子代选择器</p>
+      <p> .box02>span {font-size: 25px;}</p>
+      <p>后代选择器 会选择所有层的后代</p>
+      <p>子代选择器 只会选择一层后代（用>隔开）</p>
+    </span>
+
+    <p>
+      <span>孙代span</span>
+    </p>
+  </div>
+
+
+
+</body>
+
+</html>

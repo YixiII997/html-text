@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css选择器（类型选择器）</title>
+
+  <style>
+    div {
+      color: green;
+    }
+
+    li {
+      color: red;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>css选择器（类型选择器）</h1>
+  <h2>选择器的概念</h2>
+  <p>选择指定html元素的方式</p>
+  <p>如
+    p { font-size:18px }
+    其中 p是选择器
+    font-size是属性名
+    18px是属性值
+  </p>
+  <h2>选择器的分类</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>分类</th>
+        <th>常用的分类</th>
+        <th>作用以及代码结构</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- 基础选择器 -->
+      <!-- 类型选择器 -->
+      <tr>
+        <td rowspan="4">基础选择器</td>
+        <td>类型选择器 || 标签选择器</td>
+        <td>把html标签名作为选择器</td>
+      </tr>
+      <!-- 类选择器 -->
+      <tr>
+        <td>类选择器</td>
+        <td></td>
+      </tr>
+      <!-- id选择器 -->
+      <tr>
+        <td>id选择器</td>
+        <td></td>
+      </tr>
+      <!-- 通配符选择器 -->
+      <tr>
+        <td>通配符选择器</td>
+        <td></td>
+      </tr>
+    </tbody>
+
+  </table>
+
+  <p>如果给同一个选择器加了不同的样式 选择后者</p>
+  <p>就近原则 或者 层叠性 覆盖性</p>
+  <p>解决了冲突的问题</p>
+  <h2>代码规范性</h2>
+  <ul>
+    <li>选择器和代码中间有一个空格</li>
+    <li>属性名 和属性值之间 也保留一个空格</li>
+    <li>每个css属性独占一行 后期打包压缩再说</li>
+    <li>css注释要 /* 前后都保留一个空格 */</li>
+  </ul>
+
+
+  <hr>
+  <h1>练习区</h1>
+
+  <p>通过类型选择器 修改了div 和 li 的文字颜色</p>
+  <div>div</div>
+  <div>div</div>
+  <div>div</div>
+  <div>div</div>
+
+  <ul>
+    <li>li</li>
+    <li>li</li>
+    <li>li</li>
+    <li>li</li>
+  </ul>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>辅助标签</title>
+</head>
+
+<body>
+  <h1>辅助标签</h1>
+  <h2>label标签</h2>
+  <p>label标签 是页面中某个元素的说明</p>
+  <h3>关联方式 第一种</h3>
+  <p>通过 label标签的for 和 目标标签的id 相互关联</p>
+  <p>例如 输入框的聚焦 单选多选框的选择</p>
+  <h3>关联方式 第二种</h3>
+  <p>直接用label标签包含需要关联的控件</p>
+
+  <hr>
+  <h1>练习区</h1>
+  <form>
+    <ul>
+      <!-- 单选框label测试 -->
+      <li>
+        <p>
+          label for和id相关联
+          <br>
+          可以点击label标签选择单选框
+        </p>
+        <input type="radio" name="textRadio" id="radioFirst">
+        <label for="radioFirst">label标签1</label>
+        <input type="radio" name="textRadio" id="radioSecond">
+        <label for="radioSecond">label标签2</label>
+      </li>
+
+      <!-- 复选框label测试 -->
+      <li>
+        <p>通过label包含的方式 进行关联
+          <br>
+          无需for 和 id 直接用label包含即可
+        </p>
+        <label>
+          <input type="checkbox">
+          label标签1
+        </label>
+        <label>
+          <input type="checkbox">
+          label标签2
+        </label>
+        <label>
+          <input type="checkbox">
+          label标签3
+        </label>
+      </li>
+
+      <!-- 单选框label测试 -->
+      <li>
+        <p>用于测试 label定位文本框</p>
+        <label for="text">输入框的label：</label>
+        <input type="text" id="text">
+      </li>
+    </ul>
+  </form>
+
+</body>
+
+</html>

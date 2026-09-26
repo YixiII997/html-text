@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文本布局</title>
+  <style>
+    .text_align {
+      width: 500px;
+      background-color: rgb(0, 0, 0, 0.1);
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    .left {
+      text-align: left;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .justfy {
+      text-align: justify;
+    }
+
+    .text_indent {
+      width: 500px;
+      background-color: rgb(0, 0, 0, 0.1);
+    }
+
+    .px {
+      text-indent: 20px;
+    }
+
+    .em {
+      text-indent: 2em;
+    }
+
+    .letter_spcing {
+      letter-spacing: 2px;
+    }
+
+    .line_height {
+      line-height: 2px;
+    }
+
+    .div_test {
+      height: 50px;
+      background-color: rgb(0, 0, 0, 0.1);
+    }
+
+    .div_test p {
+      line-height: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>文本布局</h1>
+  <ul>
+    <li>text-align 文本对齐</li>
+    <li>text-indent 首行缩进</li>
+    <li>letter-spcing 文本字符间距</li>
+    <li>line-height 行高</li>
+  </ul>
+  <h2>text-align 文本对齐</h2>
+  <p>可以控制文本在<strong>块级盒子</strong>中如何水平对齐</p>
+  <p>1.用于 控制文本 图片 在盒子内如何对齐</p>
+  <p>2.文章文字两端对齐</p>
+  <h3>属性值</h3>
+  <ul>
+    <li>left 左对齐</li>
+    <li>right 右对齐</li>
+    <li>center 居中</li>
+    <li>justify 改变字间距 两边对齐 用于改变一段文字左侧和右侧有空间的对齐</li>
+  </ul>
+  <h2>text-indent 首行缩进</h2>
+  <p>用于控制 块级盒子 中的文本的首行缩进</p>
+  <p>1.用于段落的首行缩进</p>
+  <p>2.用于logo隐藏文字效果</p>
+  <h3>属性值</h3>
+  <ul>
+    <li>20px 缩进20像素（绝对单位）</li>
+    <li>2em 缩进2个文字大小 （相对单位）</li>
+  </ul>
+  <p><strong>只对块级有效 对行内元素无效</strong></p>
+  <h2>letter-spcing 文字间距</h2>
+  <p>设置文本字符的间距</p>
+  <p>1.调整字之间的间距</p>
+  <h3>属性值</h3>
+  <p>20px 将文字间距设置为20个像素</p>
+
+  <h2>line-height 文字行高</h2>
+  <p>设置文字的行高</p>
+  <p>1.设置行高能方便阅读</p>
+  <p>2.可以使单行文本垂直居中</p>
+  <h3>属性值</h3>
+  <ul>
+    <li>2px 行高为2像素 （绝对）</li>
+    <li>2 不带单位 默认为两个字大小 （相对）</li>
+    <li>可以设置 行高=盒子高度 实现单行文本的垂直居中</li>
+  </ul>
+
+
+  <hr>
+  <h1>练习区</h1>
+  <h2>text-align 文本对齐</h2>
+  <div class="text_align">
+    <p class="right">文字右对齐 text-align="right"; </p>
+    <p class="left">文字左对齐 text-align="left";</p>
+    <p class="center">文字居中对齐 text-align="center";</p>
+    <p class="justify">文字改变字间距 两边对齐 text-align="justify";</p>
+  </div>
+
+  <h2>text-indent 首行缩进</h2>
+  <div class="text_indent">
+    <p class="px">text-indent="20px" 首行缩进20像素</p>
+    <p class="em">text-indent="2em" 首行缩进2个文字大小</p>
+  </div>
+
+  <h2>letter-spcing 文字间距</h2>
+  <div>
+    <p class="letter_spcing">增加文字间距2px letter-spacing: 2px;</p>
+  </div>
+
+  <h2>line-heigth 文字行高</h2>
+  <div class="line_height">
+    <p>一段文字</p>
+    <p>一段文字</p>
+    <p>一段文字</p>
+    <p>line-height: 2px;设置文字的行高为2像素</p>
+  </div>
+  <div class="div_test">
+    <p>利用 行高=盒子高度 实现单行文字的垂直居中 </p>
+  </div>
+
+
+</body>
+
+</html>

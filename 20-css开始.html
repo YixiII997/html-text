@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css开始</title>
+  <link rel="stylesheet" href="./css/css测试文件.css">
+  <style>
+    div {
+      font-size: 18px;
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>css开始</h1>
+  <p>层叠样式表</p>
+  <ul>
+    <p>作用</p>
+    <li>页面美化</li>
+    <li>布局与定位</li>
+    <li>交互动画</li>
+  </ul>
+  <p>要做到结构与样式相分离</p>
+  <h3>根据书写位置不同进行分类</h3>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>分类</th>
+        <th>书写位置</th>
+        <th>概念和作用</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- 内联样式表 || 行内样式表 -->
+      <tr>
+        <td>内联样式表 || 行内样式表</td>
+        <td>写在标签的内部</td>
+        <td>
+          在起始标签里 写 style="color:red," <br>
+          用于控制当前标签
+        </td>
+      </tr>
+      <!-- 内部样式表 -->
+      <tr>
+        <td>内部样式表</td>
+        <td>写在head标签内</td>
+        <td>用style标签包裹 可以控制当前页面所有样式</td>
+      </tr>
+      <!-- 外部样式表 -->
+      <tr>
+        <td>外部样式表</td>
+        <td>是一个单独的css文件</td>
+        <td>可以控制整个网站的样式 是开发中最常用的 需要引入才能使用</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+  <h1>练习区</h1>
+  <div>修改了div内的文字颜色红色和大小18px &nbsp;&nbsp;&nbsp;&nbsp;用到了内部样式表 写在head标签内</div>
+  <p style="font-size: 20px;color: blue;">修改了p标签内的文字颜色为蓝色和大小为20px &nbsp;&nbsp;&nbsp;&nbsp;用到了内联样式表 写在本标签（p标签）内</p>
+
+
+  <span>修改了span标签内文字颜色绿色和大小25px 用到了外部样式表 单独写在一个css文件内 用link标签引入</span>
+
+</body>
+
+</html>

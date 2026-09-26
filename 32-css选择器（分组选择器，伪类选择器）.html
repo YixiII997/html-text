@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>分组选择器和伪类选择器</title>
+  <style>
+    .title,
+    .text {
+      font-size: 20px;
+
+    }
+
+    /* 未访问链接 */
+    a:link {
+      color: green;
+      text-decoration: none;
+    }
+
+    /* 访问过的样式 */
+    a:visited {
+      color: yellow;
+    }
+
+    /* 鼠标悬停时的样式 */
+    a:hover {
+      color: blue;
+      text-decoration: underline;
+    }
+
+    /* 点击时候的样式 */
+    a:active {
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>分组选择器和伪类选择器</h1>
+  <h2>并集选择器/分组选择器</h2>
+  <p>将不同的选择器组合在一起 用逗号隔开</p>
+  <p><strong>使用场景：</strong></p>
+  <ul>
+    <li>多个元素具备相同的属性</li>
+  </ul>
+
+  <h2>伪类选择器</h2>
+  <p>选择元素的特定状态 或者 元素的结构位置</p>
+  <p>用:分割</p>
+  <p>特定状态和特定位置</p>
+  <ul>
+    <li>1.鼠标经过元素</li>
+    <li>2.元素获得焦点</li>
+    <li>3.比如第5到第10个元素</li>
+    <li>4.比如前3个元素</li>
+    <li>5.复选框勾选 按钮禁用（表单伪类）</li>
+  </ul>
+  <h3>1.链接伪类</h3>
+  <p>根据链接的不同状态 悬停 点击 未访问等 为链接添加样式</p>
+  <ul>
+    <li>a:link 未访问时的样式</li>
+    <li>a:visited 已经访问过的样式</li>
+    <li>a:hover 鼠标悬停时的样式</li>
+    <li>a:active 点击时的瞬时样式</li>
+    <li>有顺序 由上到下的顺序</li>
+  </ul>
+
+
+
+  <hr>
+  <h1>练习区</h1>
+  <h2>并集选择器/分组选择器</h2>
+  <p class="title">使用分组选择器将 title和text进行同时选择</p>
+  <p class="text">使用分组选择器将 title和text进行同时选择</p>
+  <h2>伪类选择器</h2>
+  <strong>状态伪类</strong>
+  <br>
+  <strong>链接伪类</strong>
+  <br>
+  <a href="" class="">链接伪类的测试</a>
+  <p>添加了</p>
+  <ul>
+    <li>a:link { color: green; } 未访问时是绿色</li>
+    <li>a:visited {color: yellow;} 已经访问过是黄色</li>
+    <li>a:hover {color: blue;} 鼠标悬停时是蓝色</li>
+    <li>a:active {color: black;} 点击时是黑色</li>
+  </ul>
+
+</body>
+
+</html>

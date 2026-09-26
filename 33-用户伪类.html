@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>用户伪类</title>
+  <style>
+    .hover {
+      width: 150px;
+      height: 100px;
+      background-color: rgb(165, 165, 165);
+    }
+
+    .hover:hover {
+      background-color: rgb(100, 100, 100);
+    }
+
+    .focus:focus {
+      background-color: green;
+
+    }
+  </style>
+</head>
+
+<body>
+  <h1>用户伪类</h1>
+  <p>1.用户鼠标经过元素的时候 修改样式</p>
+  <p>2.表单获得焦点的时候 修改样式</p>
+  <ul>
+    <li>:hover 鼠标经过</li>
+    <li>:focus 获得焦点（针对表单）</li>
+  </ul>
+  <hr>
+  <h1>练习区</h1>
+  <h2>:hover</h2>
+  <div class="hover">鼠标经过改变颜色</div>
+  <h2>:focus</h2>
+  <form action="">
+    <input type="text" name="" id="" class="focus">
+  </form>
+
+</body>
+
+</html>

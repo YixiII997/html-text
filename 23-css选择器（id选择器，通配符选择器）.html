@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>id选择器,通配符选择器</title>
+  <style>
+    #red_font {
+      color: red;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>id选择器,通配符选择器</h1>
+
+  <h2>id选择器</h2>
+  <p>选择HTML中具有特定id属性的唯一元素</p>
+  <h2>语法</h2>
+  <p>用#开头</p>
+  <p> #red_font {color: red;} </p>
+  <p>调用的时候 在标签里面的id属性给对应的值 id="red_font"</p>
+  <h2>关于id选择器和类选择器的选用</h2>
+  <p>类选择器：可以多次使用 后期修改样式的时候 可以同时修改具有相同class属性的元素</p>
+  <p>id选择器：不可以多次使用 在一个页面中 每个元素的id都是唯一的 不可重复使用 主要是用于配合js添加交互效果</p>
+  <p>注意 id可以重复 但是实际中不允许这样写</p>
+  <p>注意 id多个单词连接用下划线_</p>
+
+  <h2>通配符选择器</h2>
+  <p> * {color:"red"} 表示可以修改html中的所有标签</p>
+  <p>该页面使用了* {
+    margin: 0;
+    padding: 0;
+    }</p>
+  <p>将所有代码内外边距为0</p>
+  <h2>基础选择器总结</h2>
+  <img src="./img/css基础选择器.jpg" alt="css基础选择器" title="css基础选择器">
+
+
+  <hr>
+  <h1>练习区</h1>
+  <div id="red_font">id选择器 id="red_font"</div>
+
+</body>
+
+</html>

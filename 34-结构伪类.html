@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>结构伪类</title>
+  <style>
+    .ul1 li:first-child {
+      font-size: 20px;
+    }
+
+    .ul1 li:last-child {
+      font-size: 20px;
+    }
+
+    .ul1 li:nth-child(3) {
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>结构伪类</h1>
+  <p>根据元素的位置 选择元素</p>
+  <p>选择 第一个 或者 第五个 或者 第五个到最后一个等等</p>
+  <ul>
+    <li>:first-child 一组兄弟元素中 的 第一个元素</li>
+    <li>:last-child 一组兄弟元素中 的 最后一个元素</li>
+    <li>:nth-child(n) 一组兄弟元素中 的 第n个元素</li>
+  </ul>
+  <h3>:nth-child(n) n的取值</h3>
+  <ul>
+    <li>数字 选第几个就第几个</li>
+    <li>关键字 odd奇数个 even偶数个</li>
+    <li>公式</li>
+    <li>3n 代表3的倍数 3，6，9等等</li>
+    <li>n+2 代表从第二个开始和后面的元素</li>
+    <li>-n+3 代表前三个元素</li>
+    <li>n的取值从0 开始计算</li>
+  </ul>
+  <p>用于表格的隔行变色 2n 或者odd even 等等</p>
+
+  <hr>
+  <h1>练习区</h1>
+</body>
+<ul class="ul1">
+  <li>第一个li</li>
+  <li>第二个li</li>
+  <li>第三个li</li>
+  <li>第四个li</li>
+  <li>第五个li</li>
+</ul>
+<ul class="ul2">
+  <li>第一个li</li>
+  <li>第二个li</li>
+  <li>第三个li</li>
+  <li>第四个li</li>
+  <li>第五个li</li>
+</ul>
+
+</html>

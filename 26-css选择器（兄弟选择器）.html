@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>兄弟选择器</title>
+  <style>
+    h2+p {
+      font-size: 20px;
+    }
+
+    h3~p {
+      color: rgb(76, 76, 168);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>兄弟选择器</h1>
+  <h2>邻接选择器</h2>
+  <p> h2+p{ } 通过+来进行选择</p>
+  <p>选择了h2之后紧接的p元素</p>
+  <h2>通用选择器</h2>
+  <p> h3~p{ } 通过~来进行选择
+  <p>选择h3后面所有的p元素</p>
+  </p>
+  <h2>总结</h2>
+  <img src="./img/css兄弟和子代选择器.jpg" alt="兄弟和子代选择器" title="兄弟和子代选择器">
+  <hr>
+  <h1>练习区</h1>
+
+  <h1>h1</h1>
+  <p> p标签</p>
+  <p> p标签</p>
+  <p> p标签</p>
+  <p> p标签</p>
+  <h2>h2标签</h2>
+  <p>h2后紧跟的p标签 用 h2+p{} 选择 邻接选择器</p>
+  <p> p标签</p>
+  <p> p标签</p>
+  <p> p标签</p>
+  <h3>h3标签</h3>
+  <p> h3后紧跟的p标签 用 h3~p{} 选择 通用选择器</p>
+  <p> h3后紧跟的p标签 用 h3~p{} 选择 通用选择器</p>
+  <p> h3后紧跟的p标签 用 h3~p{} 选择 通用选择器</p>
+
+
+
+
+
+
+</body>
+
+</html>

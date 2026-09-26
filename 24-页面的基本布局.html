@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>页面的基本布局</title>
+  <style>
+    .header {
+      height: 80px;
+      background-color: rgb(38, 194, 142);
+    }
+
+    .nav {
+      width: 1000px;
+      height: 60px;
+      background-color: rgb(88, 88, 185);
+
+
+    }
+
+    .main {
+      width: 1000px;
+      height: 1000px;
+      background-color: rgb(204, 101, 101);
+    }
+
+    .footer {
+      height: 80px;
+      background-color: rgb(107, 106, 106);
+    }
+
+    /* 让块级盒子水平居中对齐 */
+    .container {
+      margin: 0 auto;
+    }
+
+    /* 通配符选择器 */
+    * {
+      /* 清除页面所有元素的内外边距 */
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>页面的基本布局</h1>
+  <p>和浏览器一样宽的 叫做 通栏</p>
+  <!-- 头部 -->
+  <div class="header">
+    头部
+    <br>
+    header div 盒子
+    <br>
+    宽度width 不写 默认和浏览器一样宽
+  </div>
+  <!-- 导航栏 -->
+  <div class="nav container">
+    导航栏 nav
+  </div>
+  <!-- 主体 -->
+  <div class="main container">
+    主体 main
+    <br><br>
+    margin: 0 auto;
+    <br>
+    让块级盒子水平居中对齐
+    <br><br>
+    清除页面所有元素的内外边距
+    通配符选择器
+    <br>
+    * {
+
+    margin: 0;
+    padding: 0;
+    }
+  </div>
+  <div class="footer">
+    底部 footer
+  </div>
+
+
+
+
+</body>
+
+</html>

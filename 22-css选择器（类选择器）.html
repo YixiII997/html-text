@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>类选择器</title>
+  <style>
+    .red {
+      color: red;
+    }
+
+    .green {
+      color: green;
+    }
+
+    .blue {
+      color: blue;
+    }
+
+    .big-font-size {
+      font-size: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>类选择器</h1>
+  <h2>概念</h2>
+  <p>类选择器可以选择一个或者多个元素</p>
+  <h2>语法</h2>
+  <p>在写的时候前面加.类名</p>
+  <p>例如 .box {color: red;} </p>
+  <p>调用的时候 在标签中 假如 class="box"进行调用 可以调用一次或者多次</p>
+  <p>类选择器的优先级 高于 类型选择器 编辑同一个元素的时候 优先级高的执行</p>
+  <h2>规范性和注意事项</h2>
+  <ul>
+    <li>类名不能是中文或者纯数字</li>
+    <li>多个英文单词尽量用短横线-隔开</li>
+    <li>名字要有意义</li>
+    <li>class属性可以有多个类名 中间用空格隔开</li>
+  </ul>
+
+  <hr>
+  <h1>练习区</h1>
+  <div class="red">类选择器class="red"</div>
+  <div class="green">类选择器class="green"</div>
+  <div class="blue big-font-size">类选择器class="blue big-font-size"</div>
+
+</body>
+
+</html>

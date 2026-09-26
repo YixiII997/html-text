@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文本样式</title>
+  <style>
+    .blue {
+      color: blue;
+    }
+
+    .f0000 {
+      color: #FF0000;
+    }
+
+    .rgb {
+      color: rgb(0, 255, 0);
+    }
+
+    .font_family {
+      font-family: 宋体;
+    }
+
+    .font_size {
+      font-size: 25px;
+    }
+
+    .font_style {
+      font-style: italic;
+    }
+
+    .font_weight {
+      font-weight: bold;
+    }
+
+    .none {
+      text-decoration: none;
+    }
+
+    .underline {
+      text-decoration: underline;
+    }
+
+    .overline {
+      text-decoration: overline;
+    }
+
+    .line_through {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>文本样式</h1>
+  <p><strong>注意：</strong> 文字样式不能直接修改 修改文字样式是通过css修改标签来进行修改</p>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>字体样式</th>
+        <th>说明</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>color</td>
+        <td>字体颜色</td>
+      </tr>
+      <tr>
+        <td>font-family</td>
+        <td>字体族</td>
+      </tr>
+      <tr>
+        <td>font-size</td>
+        <td>字体大小</td>
+      </tr>
+      <tr>
+        <td>font-style</td>
+        <td>字体风格</td>
+      </tr>
+      <tr>
+        <td>font-width</td>
+        <td>字体粗细</td>
+      </tr>
+      <tr>
+        <td>text-decoration</td>
+        <td>字体装饰</td>
+      </tr>
+    </tbody>
+  </table>
+  <img src="./img/css文本样式.jpg" alt="css文本样式" title="css文本样式" style="width: 700px;">
+  <p>
+    <strong>color属性：</strong>
+  <p>关键字 如rad green等</p>
+  <p>十六进制 （开发中常用）如 #FF0000</p>
+  <p>rgb 如 rgb(255,0,0)</p>
+
+  <p><strong>rgb特殊：</strong>如 rgb(255,0,0,0.4) 的0.4是表示文字透明度</p>
+  <p><strong>同时：</strong>backgrond 也可以设置半透明rgb颜色和其他</p>
+  <h2>font-family属性：</h2>
+  <p>用于设置字体 楷体 黑体 等等</p>
+  <p>有先后顺序 例如 font-family:"Arial,Helvetica"用逗号隔开 浏览器 根据第一个有安装字体的显示 默认是微软雅黑</p>
+  <p>一般字体族属性给body标签</p>
+  <p><strong>一般网页用无衬线字体</strong></p>
+  <h2>font-size属性：</h2>
+  <p>用于设置字体大小</p>
+  <p>单位 px 像素 绝对单位 </p>
+  <p>不同浏览器默认字体大小不一样 一般直接用body选择器指定所有字体大小统一</p>
+  <h2>font-style属性：</h2>
+  <p>用于设置字体风格 打开或者关闭 斜体（italic）</p>
+  <p>属性有 normal 普通文字 italic 斜体</p>
+  <p><strong>开发中一般用于</strong>让em i等标签取消倾斜</p>
+  <h2>font-weight属性：</h2>
+  <p>用于修改字体粗体</p>
+  <p>常用于 给标题标签 取消加粗</p>
+  <p>常用于 大量的文字 批量的取消粗体</p>
+  <p>属性值有 normol 普通文字不加粗 bold 加粗</p>
+  <p>属性值也可以用数字 400是正常文字 700加粗文字</p>
+  <h2>text-decoration属性：</h2>
+  <p>用于修改字体装饰</p>
+  <p>可以设置字体上的文本装饰</p>
+  <p>常用于：删除连接的下划线a标签</p>
+  <p>常用于：批量添加删除线</p>
+  <h3>属性值</h3>
+  <ul>
+    <li>none 正常文字</li>
+    <li>underline 下划线</li>
+    <li>overline 上划线</li>
+    <li>line-through 贯穿文字的线/删除线</li>
+  </ul>
+
+
+
+
+  <hr>
+  <h1>练习区</h1>
+  <h2>文字color属性测试</h2>
+  <p class="blue">关键字 color:blue;</p>
+  <p class="f0000">十六进制 color:#FF0000;</p>
+  <p class="rgb">rgb color: rgb(0, 255, 0);</p>
+  <h2>文字族font-family属性测试</h2>
+  <p class="font_family">font-family: 宋体; 设置字体为宋体</p>
+  <h2>文字大小font-size属性测试</h2>
+  <p class="font_size">font-size: 25px; 设置字体大小为25像素</p>
+  <h2>文字风格font-style属性测试</h2>
+  <p class="font_style">font-style: italic; 设置文字为斜体</p>
+  <h2>文字粗体font-wight属性：</h2>
+  <p class="font_weight">font-weight: bold; 设置文字加粗</p>
+  <h2>文字装饰text-decoration属性：</h2>
+  <p class="none">正常的文字</p>
+  <p class="underline">下划线文字</p>
+  <p class="overline">上划线文字</p>
+  <p class="line_through">贯穿文字的线 / 删除线</p>
+
+
+
+
+
+
+</body>
+
+</html>
